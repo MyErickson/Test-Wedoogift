@@ -37,6 +37,7 @@
   border: 2px solid black;
   width: 20rem;
   margin: 1rem;
+  background-color: rgb(75, 246, 24);
 }
 
 .App__card-item-amount{
@@ -47,6 +48,7 @@
   height: 8rem;
   margin: 1rem;
   padding: 1rem;
+  background-color: rgb(234, 223, 75);
 }
 
 .App__card-item-amount,.App__card,.App{
@@ -55,6 +57,6 @@
   align-items: center;
 }
 
-.App__card-item-amount:hover, .App__card-item:hover,.App__input-amount,.App__button{ 
+.App__card-item-amount:hover,.App__input-amount,.App__button{ 
   cursor: pointer;
 }
