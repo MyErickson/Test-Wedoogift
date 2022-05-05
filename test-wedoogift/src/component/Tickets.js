@@ -3,7 +3,7 @@ const Tickets = (props)=> {
     const {amount,ticket} = props || {}
 return (
   <>
-    {amount && ticket &&
+    {amount > 0 && ticket &&
     (
       <>
         <div className='App__card-text'>{`Votre montant est composé ${ticket?.cards?.length > 1 ? "des cartes suivantes" :"de carte suivante"} :`}</div>

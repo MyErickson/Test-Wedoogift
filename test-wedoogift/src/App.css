@@ -10,6 +10,7 @@
   width: 14rem;
   max-width: auto;
   text-align: center;
+  margin-left: 0.5rem;
   background-color: aliceblue;
 }
 
@@ -51,7 +52,23 @@
   background-color: rgb(234, 223, 75);
 }
 
-.App__card-item-amount,.App__card,.App{
+.App__content-amount{
+  display: flex;
+  align-items: center;
+  background-color:rgb(131, 124, 124) ;
+}
+
+
+.App__content-amount-button{
+  margin-left: 3rem;
+}
+
+.App__button-more,.App__button-less{
+  margin:0.5rem;
+  padding: 0.5rem;
+}
+
+.App__card-item-amount,.App__card,.App,.App__content-amount-button{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,3 +77,5 @@
 .App__card-item-amount:hover,.App__input-amount,.App__button{ 
   cursor: pointer;
 }
+
+

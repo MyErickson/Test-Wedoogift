@@ -4,7 +4,7 @@ function CardsAmount(props) {
     const { amount , cardAmount, handleClickSearchCombination} = props || {}
   return (
     <>        
-    { amount && cardAmount && (
+    { amount > 0 && cardAmount && (
         <>
           {cardAmount?.length > 1 ?
               <div className='App__card-text'>Votre montant n'est pas possible ,veillez choisir entre :</div>

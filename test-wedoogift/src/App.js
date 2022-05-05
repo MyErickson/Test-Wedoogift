@@ -6,7 +6,7 @@ import CardsAmount from './component/CardsAmount';
 
 
 const App = ()=> {
-  const [amount,setAmount]= useState()
+  const [amount,setAmount]= useState(0)
   const [cardAmount,setcardAmount]= useState()
   const [ticket,setTicket]= useState()
 
@@ -43,18 +43,31 @@ const App = ()=> {
     e.key ==="Enter" && handleClickSearchCombination()
   }
 
+  const handleClickButtonMoreLess=(e)=>{
+    const { name } = e.target 
+    const moreLessAmount = name === "more" ? amount+1 : amount-1
+    setAmount(moreLessAmount)
+    handleClickSearchCombination(moreLessAmount)
+  }
 
   return (
     <div className="App">
-      <input 
-        className="App__input-amount" 
-        placeholder='0' 
-        id="amount" 
-        name="amount" 
-        value={amount ||''}
-        onChange={(e)=> handleChangeAmount(e)}
-        onKeyUp={(e)=> handleKeyUpAmount(e)}
-      />
+      <div className="App__content-amount">
+        <input 
+          className="App__input-amount" 
+          placeholder='0' 
+          id="amount" 
+          name="amount" 
+          value={amount ||''}
+          onChange={(e)=> handleChangeAmount(e)}
+          onKeyUp={(e)=> handleKeyUpAmount(e)}
+        />
+        <div className="App__content-amount-button">
+          <button className='App__button-more' name="more" onClick={(e)=>{handleClickButtonMoreLess(e)}}>+</button>
+          <button className='App__button-less' name="less" onClick={(e)=>{handleClickButtonMoreLess(e)}}>-</button>
+      </div>
+    </div>
+
       <button 
         className="App__button" 
         type="button"   
