@@ -35,21 +35,19 @@
 .App__card-item{
   font-size: 5rem;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid rgb(38, 141, 225);
   width: 20rem;
-  margin: 1rem;
-  background-color: rgb(75, 246, 24);
+  margin: 1rem; 
 }
 
 .App__card-item-amount{
   font-size: 5rem;
-  border: 2px solid black;
+  border: 2px solid rgb(107, 204, 4);
   border-radius: 10px;
   width: auto;
   height: 8rem;
   margin: 1rem;
   padding: 1rem;
-  background-color: rgb(234, 223, 75);
 }
 
 .App__content-amount{

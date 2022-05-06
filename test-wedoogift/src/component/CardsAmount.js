@@ -2,6 +2,7 @@ import React from 'react'
 
 function CardsAmount(props) {
     const { amount , cardAmount, handleClickSearchCombination} = props || {}
+   
   return (
     <>        
     { amount > 0 && cardAmount && (
@@ -14,7 +15,7 @@ function CardsAmount(props) {
           
           {
             cardAmount?.map(({value},index)=>{
-              return  <div key={index} className='App__card-item-amount' onClick={()=> handleClickSearchCombination(value)}>{value}€</div>
+              return  <div key={index}  className='App__card-item-amount' onClick={()=> handleClickSearchCombination(value)}>{value}€</div>
             })
           }      
         </>
